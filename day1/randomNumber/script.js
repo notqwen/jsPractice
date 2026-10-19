@@ -1,9 +1,10 @@
 const number = Math.floor(Math.random() * 100) + 1;
 let count = 0;
+const countBorder = prompt("Введите максимальное число попыток")
 let isCancelled = false;
 let isGuessed = false;
 while (count < 7){
-    const raw = prompt("Введите число от 1 до 100")
+    const raw = prompt(`Введите число от 1 до 100`)
     
     if (raw === null){
         alert("Выйти из игры");
